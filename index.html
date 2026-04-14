@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enterprise Technology Risk Dashboard – Q1 2026</title>
+<title>Executive Risk &amp; Control Dashboard – Q1 2026</title>
 <style>
   :root {
     --navy: #0d1f3c;
@@ -40,6 +40,18 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  /* ── ILLUSTRATIVE BANNER ── */
+  .illustrative-banner {
+    background: #eef2f8;
+    border-bottom: 1px solid #c8d3e6;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 10.5px;
+    color: #4a5a72;
+    letter-spacing: 0.05em;
+    font-style: italic;
+  }
+
   /* ── HEADER ── */
   .header {
     background: var(--navy);
@@ -56,7 +68,14 @@
     font-size: 22px;
     font-weight: normal;
     letter-spacing: 0.02em;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
+    color: #ffffff;
+  }
+  .header-left .subtitle {
+    font-size: 12px;
+    color: #8daecb;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
   }
   .header-left .period {
     font-size: 11px;
@@ -70,7 +89,7 @@
     border-left: 3px solid #4a90c4;
     padding: 10px 14px;
     font-size: 12px;
-    color: #2d4a62;
+    color: #c8daea;
     max-width: 680px;
     line-height: 1.6;
   }
@@ -82,7 +101,7 @@
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: #3a5c78;
+    color: #8daecb;
     margin-bottom: 8px;
   }
   .posture-badge {
@@ -100,7 +119,7 @@
   .posture-note {
     margin-top: 8px;
     font-size: 10px;
-    color: #3a5c78;
+    color: #8daecb;
     line-height: 1.5;
   }
 
@@ -305,7 +324,7 @@
   .sev-medium { color: var(--amber); font-weight: 700; font-size: 10.5px; }
   .sev-low    { color: #3b7a57; font-weight: 600; font-size: 10.5px; }
 
-  /* ── THIRD-PARTY RISK ── */
+  /* ── COUNTERPARTY RISK ── */
   .tp-stats { display: flex; gap: 12px; margin-bottom: 14px; }
   .tp-stat {
     flex: 1;
@@ -408,39 +427,47 @@
 </head>
 <body>
 
+<!-- ════════════════ ILLUSTRATIVE LABEL ════════════════ -->
+<div class="illustrative-banner">
+  Illustrative Executive Dashboard &ndash; Investment Risk &amp; Control Oversight &nbsp;|&nbsp; Simulated data for demonstration purposes only
+</div>
+
+<!-- ════════════════ HEADER ════════════════ -->
+<header class="header">
   <div class="header-left">
-    <div class="period">Enterprise Technology Risk &nbsp;|&nbsp; Reporting Period: Q1 2026 &nbsp;|&nbsp; As at March 30, 2026;|&nbsp; David McCrory — Demo </div>
-    <h1>Enterprise Technology Risk Dashboard</h1>
+    <div class="period">Operational Risk &amp; Internal Audit &nbsp;|&nbsp; Reporting Period: Q1 2026 &nbsp;|&nbsp; As at March 31, 2026 &nbsp;|&nbsp; David A. McCrory</div>
+    <h1>Executive Risk &amp; Control Dashboard</h1>
+    <div class="subtitle">Operational Risk, Internal Audit &amp; Control Effectiveness Overview</div>
     <div style="margin-top:12px;">
       <div class="exec-summary">
-        The enterprise technology risk profile remains <strong style="color:#f6cc6a;">Amber</strong> for Q1 2026, driven by elevated third-party concentration risk and outstanding remediation activities in privileged access management. Cybersecurity controls are operating within appetite; however, three audit findings related to cloud configuration governance remain open beyond target resolution dates.
+        The firm's operational risk and control environment remains <strong style="color:#f6cc6a;">Amber</strong> for Q1 2026, driven by elevated counterparty concentration risk and outstanding remediation items in trade authorization controls. Core investment process controls are operating within appetite; however, three audit findings related to fund operations governance remain open beyond target resolution dates. Control self-assessment completion across investment teams is below the 95% target threshold.
       </div>
     </div>
   </div>
   <div class="posture-box">
     <div class="posture-label">Overall Risk Posture</div>
     <div class="posture-badge amber">&#9679;&nbsp; Amber</div>
-    <div class="posture-note">2 domains outside appetite<br>Board notification not required</div>
+    <div class="posture-note">2 domains outside appetite<br>Escalation not required</div>
   </div>
 </header>
 
 <!-- ════════════════ MAIN GRID ════════════════ -->
 <div class="main">
 
-  <!-- ── SECTION 1: RISK APPETITE ALIGNMENT ── -->
+  <!-- ── SECTION 1: OPERATIONAL RISK APPETITE ALIGNMENT ── -->
   <div class="card full-width">
     <div class="card-header">
       <span class="section-num">01</span>
-      <h2>Risk Appetite Alignment</h2>
+      <h2>Operational Risk Appetite Alignment</h2>
     </div>
     <div class="card-body">
-      <p class="section-intro">Current risk exposure assessed against Board-approved technology risk appetite statements as at March 30, 2026.</p>
+      <p class="section-intro">Current operational risk exposure assessed against Board-approved risk appetite statements as at March 31, 2026.</p>
       <div class="appetite-grid">
 
         <div class="appetite-item">
           <div class="dot green"></div>
           <div>
-            <div class="ai-label">Cybersecurity</div>
+            <div class="ai-label">Trade Processing &amp; Settlement Risk</div>
             <div class="ai-status">Status: <span class="badge green">Within Appetite</span></div>
           </div>
         </div>
@@ -448,25 +475,25 @@
         <div class="appetite-item">
           <div class="dot amber"></div>
           <div>
-            <div class="ai-label">Third-Party Risk</div>
+            <div class="ai-label">Counterparty &amp; Vendor Risk</div>
             <div class="ai-status">Status: <span class="badge amber">Outside Appetite</span></div>
-            <div class="ai-note">18% of Tier 1 vendors have not completed annual reassessment. Remediation plan approved; target closure Q3 2026.</div>
+            <div class="ai-note">18% of critical counterparties have not completed annual due diligence reassessment. Remediation plan approved; target closure Q3 2026.</div>
           </div>
         </div>
 
         <div class="appetite-item">
           <div class="dot amber"></div>
           <div>
-            <div class="ai-label">Cloud Risk</div>
+            <div class="ai-label">Investment Process Controls</div>
             <div class="ai-status">Status: <span class="badge amber">Outside Appetite</span></div>
-            <div class="ai-note">Three open audit findings related to cloud security posture management (CSPM) configuration drift. Owner: VP Cloud Engineering.</div>
+            <div class="ai-note">Three open audit findings related to trade authorization and exception management remain unresolved. Owner: Head of Investment Operations.</div>
           </div>
         </div>
 
         <div class="appetite-item">
           <div class="dot green"></div>
           <div>
-            <div class="ai-label">AI / Emerging Technology Risk</div>
+            <div class="ai-label">Fund Valuation &amp; Reporting Risk</div>
             <div class="ai-status">Status: <span class="badge green">Within Appetite</span></div>
           </div>
         </div>
@@ -474,7 +501,7 @@
         <div class="appetite-item">
           <div class="dot green"></div>
           <div>
-            <div class="ai-label">Operational Resilience</div>
+            <div class="ai-label">Business Continuity &amp; Resilience</div>
             <div class="ai-status">Status: <span class="badge green">Within Appetite</span></div>
           </div>
         </div>
@@ -482,7 +509,7 @@
         <div class="appetite-item">
           <div class="dot green"></div>
           <div>
-            <div class="ai-label">Data Governance &amp; Privacy</div>
+            <div class="ai-label">Data Governance &amp; Regulatory Reporting</div>
             <div class="ai-status">Status: <span class="badge green">Within Appetite</span></div>
           </div>
         </div>
@@ -491,17 +518,17 @@
     </div>
   </div>
 
-  <!-- ── SECTION 2: KRIs ── -->
+  <!-- ── SECTION 2: INVESTMENT PROCESS RISK INDICATORS ── -->
   <div class="card full-width">
     <div class="card-header">
       <span class="section-num">02</span>
-      <h2>Key Risk Indicators (KRIs)</h2>
+      <h2>Investment Process Risk Indicators</h2>
     </div>
     <div class="card-body">
       <table>
         <thead>
           <tr>
-            <th style="width:34%">Metric</th>
+            <th style="width:34%">Indicator</th>
             <th>Current Value</th>
             <th>Threshold</th>
             <th>Trend</th>
@@ -510,58 +537,58 @@
         </thead>
         <tbody>
           <tr>
-            <td>Critical vulnerabilities unresolved beyond SLA</td>
-            <td><strong>6.2%</strong></td>
-            <td>&lt; 5.0%</td>
-            <td><span class="trend up">▲ Increasing</span></td>
+            <td>Trade exceptions exceeding authorized tolerance</td>
+            <td><strong>3.1%</strong></td>
+            <td>&lt; 2.0%</td>
+            <td><span class="trend up">▲ Deteriorating</span></td>
             <td><span class="badge amber">Amber</span></td>
           </tr>
           <tr>
-            <td>Tier 1 vendors without completed annual reassessment</td>
+            <td>Critical counterparties without completed annual reassessment</td>
             <td><strong>18%</strong></td>
             <td>&lt; 10%</td>
             <td><span class="trend stable">● Stable</span></td>
             <td><span class="badge red">Red</span></td>
           </tr>
           <tr>
-            <td>Privileged access violations (PAM policy breaches)</td>
+            <td>Access control exceptions — unauthorized trade modifications</td>
             <td><strong>14</strong></td>
             <td>&lt; 5 per quarter</td>
-            <td><span class="trend up">▲ Increasing</span></td>
+            <td><span class="trend up">▲ Deteriorating</span></td>
             <td><span class="badge red">Red</span></td>
           </tr>
           <tr>
-            <td>Failed control tests (automated &amp; manual)</td>
+            <td>Failed control assessments (automated &amp; manual)</td>
             <td><strong>9.4%</strong></td>
             <td>&lt; 7.0%</td>
             <td><span class="trend down">▼ Improving</span></td>
             <td><span class="badge amber">Amber</span></td>
           </tr>
           <tr>
-            <td>Mean time to contain — P1 security incidents (hours)</td>
+            <td>Mean time to resolve operational incidents (hours)</td>
             <td><strong>3.8 hrs</strong></td>
             <td>&lt; 4.0 hrs</td>
             <td><span class="trend down">▼ Improving</span></td>
             <td><span class="badge green">Green</span></td>
           </tr>
           <tr>
-            <td>Patch compliance rate — enterprise endpoints</td>
-            <td><strong>94.1%</strong></td>
-            <td>&gt; 95.0%</td>
+            <td>Pre-trade compliance check failure rate</td>
+            <td><strong>1.4%</strong></td>
+            <td>&lt; 1.0%</td>
             <td><span class="trend stable">● Stable</span></td>
             <td><span class="badge amber">Amber</span></td>
           </tr>
           <tr>
-            <td>Disaster recovery tests passing within RTO/RPO targets</td>
+            <td>Business continuity tests within RTO/RPO targets</td>
             <td><strong>100%</strong></td>
             <td>100%</td>
             <td><span class="trend stable">● Stable</span></td>
             <td><span class="badge green">Green</span></td>
           </tr>
           <tr>
-            <td>MFA adoption — privileged users</td>
-            <td><strong>97.3%</strong></td>
-            <td>&gt; 99.0%</td>
+            <td>Control self-assessment completion — investment teams</td>
+            <td><strong>94.1%</strong></td>
+            <td>&gt; 95.0%</td>
             <td><span class="trend down">▼ Improving</span></td>
             <td><span class="badge amber">Amber</span></td>
           </tr>
@@ -577,12 +604,12 @@
       <h2>Control Effectiveness</h2>
     </div>
     <div class="card-body">
-      <p class="section-intro">Based on Q1 2026 control testing cycle (124 controls tested across 3 domains).</p>
+      <p class="section-intro">Based on Q1 2026 control testing cycle (124 controls tested across 3 investment process domains).</p>
       <div class="control-grid">
 
         <div class="control-domain">
           <div class="cd-header">
-            <span class="cd-name">Identity &amp; Access Management (IAM)</span>
+            <span class="cd-name">Trade Authorization &amp; Approval Controls</span>
             <span class="cd-result">41 controls tested</span>
           </div>
           <div class="bar-track">
@@ -597,7 +624,7 @@
 
         <div class="control-domain">
           <div class="cd-header">
-            <span class="cd-name">Change Management</span>
+            <span class="cd-name">NAV Calculation &amp; Fund Accounting Controls</span>
             <span class="cd-result">52 controls tested</span>
           </div>
           <div class="bar-track">
@@ -612,7 +639,7 @@
 
         <div class="control-domain">
           <div class="cd-header">
-            <span class="cd-name">Backup &amp; Recovery</span>
+            <span class="cd-name">Settlement &amp; Reconciliation Controls</span>
             <span class="cd-result">31 controls tested</span>
           </div>
           <div class="bar-track">
@@ -635,11 +662,11 @@
     </div>
   </div>
 
-  <!-- ── SECTION 4: ISSUES & AUDIT ── -->
+  <!-- ── SECTION 4: AUDIT FINDINGS & OPEN ISSUES ── -->
   <div class="card">
     <div class="card-header">
       <span class="section-num">04</span>
-      <h2>Issues &amp; Audit Management</h2>
+      <h2>Audit Findings &amp; Open Issues</h2>
     </div>
     <div class="card-body">
       <div class="stat-row">
@@ -649,7 +676,7 @@
         </div>
         <div class="stat-box warn">
           <div class="stat-num">8</div>
-          <div class="stat-lbl">Overdue Issues</div>
+          <div class="stat-lbl">Overdue</div>
         </div>
         <div class="stat-box danger">
           <div class="stat-num">5</div>
@@ -660,7 +687,7 @@
       <table>
         <thead>
           <tr>
-            <th style="width:38%">Issue Title</th>
+            <th style="width:40%">Audit Finding</th>
             <th>Severity</th>
             <th>Owner</th>
             <th>Days Overdue</th>
@@ -668,33 +695,33 @@
         </thead>
         <tbody>
           <tr>
-            <td>Privileged account review not completed — Production</td>
+            <td>Segregation of duties gap — front-to-back access conflict (Private Markets)</td>
             <td><span class="sev-high">HIGH</span></td>
-            <td>CISO Office</td>
+            <td>Risk &amp; Compliance</td>
             <td><span class="overdue-tag">+42 days</span></td>
           </tr>
           <tr>
-            <td>CSPM misconfiguration — Azure Policy exceptions undocumented</td>
+            <td>NAV reconciliation discrepancy unresolved — carried from Q4 2025</td>
             <td><span class="sev-high">HIGH</span></td>
-            <td>VP Cloud Eng.</td>
+            <td>Fund Operations</td>
             <td><span class="overdue-tag">+28 days</span></td>
           </tr>
           <tr>
-            <td>Vendor contract renewal — SLA terms not updated post-SOC 2</td>
+            <td>Counterparty onboarding SLA breach — 3 accounts pending due diligence</td>
             <td><span class="sev-medium">MEDIUM</span></td>
-            <td>3rd Party Risk</td>
+            <td>Client Services</td>
             <td><span class="overdue-tag">+17 days</span></td>
           </tr>
           <tr>
-            <td>DR test remediation items — 2 failover scripts not updated</td>
+            <td>Trade error remediation — 2 manual override procedures not updated</td>
             <td><span class="sev-medium">MEDIUM</span></td>
-            <td>Infra &amp; Ops</td>
+            <td>Operations</td>
             <td><span class="overdue-tag">+11 days</span></td>
           </tr>
           <tr>
-            <td>Legacy encryption protocol (TLS 1.1) still active — 3 endpoints</td>
+            <td>Management fee calculation exception — 2 accounts under review</td>
             <td><span class="sev-high">HIGH</span></td>
-            <td>Network Sec.</td>
+            <td>Fund Accounting</td>
             <td>On Target</td>
           </tr>
         </tbody>
@@ -702,21 +729,21 @@
     </div>
   </div>
 
-  <!-- ── SECTION 5: THIRD-PARTY RISK ── -->
+  <!-- ── SECTION 5: COUNTERPARTY & VENDOR RISK ── -->
   <div class="card">
     <div class="card-header">
       <span class="section-num">05</span>
-      <h2>Third-Party Risk</h2>
+      <h2>Counterparty &amp; Vendor Risk</h2>
     </div>
     <div class="card-body">
       <div class="tp-stats">
         <div class="tp-stat">
           <div class="tp-num">214</div>
-          <div class="tp-lbl">Total Vendors</div>
+          <div class="tp-lbl">Total Relationships</div>
         </div>
         <div class="tp-stat">
           <div class="tp-num">47</div>
-          <div class="tp-lbl">Tier 1 (Critical)</div>
+          <div class="tp-lbl">Critical (Tier 1)</div>
         </div>
         <div class="tp-stat">
           <div class="tp-num warn">82%</div>
@@ -724,56 +751,56 @@
         </div>
         <div class="tp-stat">
           <div class="tp-num danger">23%</div>
-          <div class="tp-lbl">% High Risk</div>
+          <div class="tp-lbl">% Elevated Risk</div>
         </div>
       </div>
 
-      <p style="font-size:11px;color:var(--text-muted);margin-bottom:10px;font-style:italic;">Vendor risks requiring management attention:</p>
+      <p style="font-size:11px;color:var(--text-muted);margin-bottom:10px;font-style:italic;">Relationships requiring management attention:</p>
 
       <div class="vendor-highlight red">
-        <div class="vh-name">Apex Data Services Inc. &nbsp;<span class="badge red">High Risk</span></div>
-        <div class="vh-desc">Annual SOC 2 Type II assessment overdue by 60+ days. Provides managed database services for Group Benefits core platform. Escalation in progress with executive sponsor.</div>
+        <div class="vh-name">Meridian Fund Services Ltd. &nbsp;<span class="badge red">High Risk</span></div>
+        <div class="vh-desc">Annual SOC 1 Type II assessment overdue by 60+ days. Provides fund administration and NAV calculation services for core investment vehicles. Escalation in progress with executive sponsor.</div>
       </div>
 
       <div class="vendor-highlight amber">
-        <div class="vh-name">GlobalNet Communications &nbsp;<span class="badge amber">Elevated</span></div>
-        <div class="vh-desc">Subcontractor usage increased beyond original contract scope without Technology Risk approval. Concentration risk flagged — two additional carriers now handling network failover traffic.</div>
+        <div class="vh-name">ClearBridge Settlement Partners &nbsp;<span class="badge amber">Elevated</span></div>
+        <div class="vh-desc">Subcontractor usage increased beyond original contract scope without Risk approval. Settlement concentration risk flagged — two additional clearing agents now handling overflow trade volume.</div>
       </div>
     </div>
   </div>
 
-  <!-- ── SECTION 6: EMERGING RISK ── -->
+  <!-- ── SECTION 6: EMERGING RISK — INVESTMENT OPERATIONS ── -->
   <div class="card">
     <div class="card-header">
       <span class="section-num">06</span>
-      <h2>Emerging Risk — AI &amp; Technology</h2>
+      <h2>Emerging Risk &mdash; Investment Lifecycle</h2>
     </div>
     <div class="card-body">
       <div class="ai-stats">
         <div class="ai-stat">
           <div class="ai-num">38</div>
-          <div class="ai-lbl">AI Use Cases Registered</div>
+          <div class="ai-lbl">Operational Incidents Logged</div>
         </div>
         <div class="ai-stat">
-          <div class="ai-num">26</div>
-          <div class="ai-lbl">Reviewed by Risk</div>
+          <div class="ai-num">24</div>
+          <div class="ai-lbl">Formally Reviewed</div>
         </div>
         <div class="ai-stat">
-          <div class="ai-num">71%</div>
-          <div class="ai-lbl">Approved / Conditional</div>
+          <div class="ai-num">63%</div>
+          <div class="ai-lbl">Resolved / Mitigated</div>
         </div>
         <div class="ai-stat">
-          <div class="ai-num">4</div>
-          <div class="ai-lbl">Pending Decision</div>
+          <div class="ai-num">7</div>
+          <div class="ai-lbl">Pending Assessment</div>
         </div>
       </div>
 
       <p style="font-size:11px;color:var(--text-muted);margin-bottom:6px;">
-        Primary concern areas: <span class="concern-tag">Model Risk</span> <span class="concern-tag">Data Exposure</span> <span class="concern-tag">Explainability</span>
+        Primary concern areas: <span class="concern-tag">Valuation Risk</span> <span class="concern-tag">Settlement Exposure</span> <span class="concern-tag">Operational Concentration</span>
       </p>
 
       <div class="narrative">
-        <strong>Risk function assessment:</strong> The volume of AI use case submissions has increased 40% quarter-over-quarter, outpacing the current review capacity of the AI governance team. Seven submissions involve the use of third-party large language models with access to non-public personal information (NPPI), raising concerns under PIPEDA and internal data classification policy. Of these, three have been conditionally approved pending data residency confirmation from the vendor. Two use cases involving automated underwriting decision support have been escalated to the Model Risk Committee for independent review, as outputs may be relied upon in a manner that requires model validation under OSFI Guideline E-23. The Technology Risk function has recommended a temporary intake freeze on Tier 1 AI use cases until a formal AI risk framework, currently in draft, receives sign-off from the Chief Risk Officer and is socialized with the Audit Committee.
+        <strong>Risk function assessment:</strong> The volume of operational risk events and control exceptions has increased 40% quarter-over-quarter, concentrated in private markets and alternative investment workflows where manual processing remains prevalent. Seven incidents involve valuation methodology inconsistencies affecting reported NAV for illiquid holdings, raising concerns under internal fair value policy and applicable regulatory guidance on fund valuation. Of these, three have been conditionally cleared pending independent price verification from a third-party administrator. Two incidents involving trade allocation errors in multi-asset mandates have been escalated to the Investment Risk Committee for independent review, as the exceptions may require restatement of client-level performance attribution. The Risk function has recommended a focused review of end-to-end controls across the private markets lifecycle, with findings to be presented to the Audit Committee at its next scheduled meeting.
       </div>
     </div>
   </div>
@@ -783,9 +810,9 @@
 
 <!-- ════════════════ FOOTER ════════════════ -->
 <footer class="footer">
-  <span>Prepared by Technology Risk &nbsp;|&nbsp; Enterprise Risk Management &nbsp;|&nbsp; Q1 2026</span>
-  <span class="confidential">&#128274; For Internal Use Only — Not for External Distribution</span>
-  <span>Last updated: March 30, 2026</span>
+  <span>Prepared by Risk &amp; Compliance &nbsp;|&nbsp; Investment Risk Management &nbsp;|&nbsp; Q1 2026</span>
+  <span class="confidential">&#128274; For Internal Use Only &mdash; Not for External Distribution</span>
+  <span>Last updated: March 31, 2026</span>
 </footer>
 
 </body>
