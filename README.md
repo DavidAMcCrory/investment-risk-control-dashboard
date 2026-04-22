@@ -61,7 +61,7 @@ Built as a single `index.html` file — no JavaScript libraries, CSS frameworks,
 
 ## Context
 
-This artifact reflects how I approach integrating operational risk, audit insight, and control oversight across investment environments — translating domain expertise into structured, executive-ready reporting.
+This artifact reflects how I approach integrating operational risk, audit insight, and control oversight across investment environments — translating domain expertise into structured, executive-ready reporting. Includes prioritization and time-bound management actions aligned to audit and remediation cycles.
 
 **Live demo:** https://davidamccrory.github.io/investment-risk-control-dashboard/
 
