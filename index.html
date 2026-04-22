@@ -423,6 +423,66 @@
     margin-bottom: 12px;
     font-style: italic;
   }
+
+  /* ── DATA CAVEAT ── */
+  .data-caveat {
+    display: block;
+    font-size: 10px;
+    color: #7a6a3a;
+    font-style: italic;
+    margin-top: 2px;
+  }
+  .kri-footnote {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+    font-size: 10px;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  /* ── MANAGEMENT FOCUS ── */
+  .action-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4px;
+  }
+  .action-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 13px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    border-left: 3px solid;
+  }
+  .action-item.priority-high  { border-left-color: var(--red); }
+  .action-item.priority-amber { border-left-color: var(--amber); }
+  .action-num {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--slate-light);
+    min-width: 18px;
+    padding-top: 1px;
+  }
+  .action-body { flex: 1; }
+  .action-title {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--navy-mid);
+    margin-bottom: 2px;
+  }
+  .action-detail {
+    font-size: 11px;
+    color: var(--slate);
+    line-height: 1.5;
+  }
+  .action-owner {
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-top: 3px;
+  }
 </style>
 </head>
 <body>
@@ -558,7 +618,7 @@
             <td><span class="badge red">Red</span></td>
           </tr>
           <tr>
-            <td>Failed control assessments (automated &amp; manual)</td>
+            <td>Failed control assessments (automated &amp; manual)<span class="data-caveat">&#9432; Fund accounting domain data under review — final figure pending sign-off</span></td>
             <td><strong>9.4%</strong></td>
             <td>&lt; 7.0%</td>
             <td><span class="trend down">▼ Improving</span></td>
@@ -586,7 +646,7 @@
             <td><span class="badge green">Green</span></td>
           </tr>
           <tr>
-            <td>Control self-assessment completion — investment teams</td>
+            <td>Control self-assessment completion — investment teams<span class="data-caveat">&#9432; 1 business unit response outstanding — Private Markets ops not yet submitted</span></td>
             <td><strong>94.1%</strong></td>
             <td>&gt; 95.0%</td>
             <td><span class="trend down">▼ Improving</span></td>
@@ -594,6 +654,7 @@
           </tr>
         </tbody>
       </table>
+      <p class="kri-footnote">&#9432; Indicators marked with a caveat note are based on preliminary data. Final figures subject to confirmation by business unit data owners. Dashboard refreshed as at March 31, 2026.</p>
     </div>
   </div>
 
@@ -801,6 +862,61 @@
 
       <div class="narrative">
         <strong>Risk function assessment:</strong> The volume of operational risk events and control exceptions has increased 40% quarter-over-quarter, concentrated in private markets and alternative investment workflows where manual processing remains prevalent. Seven incidents involve valuation methodology inconsistencies affecting reported NAV for illiquid holdings, raising concerns under internal fair value policy and applicable regulatory guidance on fund valuation. Of these, three have been conditionally cleared pending independent price verification from a third-party administrator. Two incidents involving trade allocation errors in multi-asset mandates have been escalated to the Investment Risk Committee for independent review, as the exceptions may require restatement of client-level performance attribution. The Risk function has recommended a focused review of end-to-end controls across the private markets lifecycle, with findings to be presented to the Audit Committee at its next scheduled meeting.
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ── SECTION 7: MANAGEMENT FOCUS ── -->
+  <div class="card full-width">
+    <div class="card-header">
+      <span class="section-num">07</span>
+      <h2>Management Focus &mdash; Priority Actions for Q2 2026</h2>
+    </div>
+    <div class="card-body">
+      <p class="section-intro">Actions identified by the Risk function as requiring senior management prioritization in the coming quarter. Owners and target dates to be confirmed at the next Investment Risk Committee.</p>
+      <div class="action-list">
+
+        <div class="action-item priority-high">
+          <div class="action-num">1</div>
+          <div class="action-body">
+            <div class="action-title">Remediate access control exceptions in Private Markets — 14 violations vs. &lt;5 threshold</div>
+            <div class="action-detail">The volume of unauthorized trade modification exceptions has increased for two consecutive quarters and is now materially outside appetite. A root-cause review of segregation of duties controls is required before the Q2 audit cycle commences.</div>
+            <div class="action-owner">Suggested owner: Head of Investment Operations &nbsp;|&nbsp; Target: Q2 2026</div>
+          </div>
+          <div><span class="badge red">Urgent</span></div>
+        </div>
+
+        <div class="action-item priority-high">
+          <div class="action-num">2</div>
+          <div class="action-body">
+            <div class="action-title">Resolve NAV reconciliation discrepancy carried from Q4 2025 — now +28 days overdue</div>
+            <div class="action-detail">Outstanding fund accounting discrepancy has not been resolved within the agreed remediation timeline. Escalation to CFO recommended if not closed within 10 business days. Potential impact on Q1 financial reporting accuracy.</div>
+            <div class="action-owner">Suggested owner: Head of Fund Operations &nbsp;|&nbsp; Target: Immediate</div>
+          </div>
+          <div><span class="badge red">Urgent</span></div>
+        </div>
+
+        <div class="action-item priority-amber">
+          <div class="action-num">3</div>
+          <div class="action-body">
+            <div class="action-title">Prioritize counterparty reassessment backlog — 18% of critical relationships past due</div>
+            <div class="action-detail">Annual due diligence for Tier 1 counterparties is running significantly behind schedule. Failure to complete assessments by end of Q2 will result in continued breach of appetite and may attract regulatory attention in the event of a counterparty incident.</div>
+            <div class="action-owner">Suggested owner: Director, Third-Party Risk &nbsp;|&nbsp; Target: Q2 2026</div>
+          </div>
+          <div><span class="badge amber">Elevated</span></div>
+        </div>
+
+        <div class="action-item priority-amber">
+          <div class="action-num">4</div>
+          <div class="action-body">
+            <div class="action-title">Complete control self-assessments ahead of Q2 audit cycle — 1 business unit outstanding</div>
+            <div class="action-detail">Private Markets operations has not submitted its Q1 control self-assessment. Completion is required to validate the current control effectiveness picture and ensure the internal audit plan is based on accurate risk information.</div>
+            <div class="action-owner">Suggested owner: Head of Private Markets Operations &nbsp;|&nbsp; Target: April 2026</div>
+          </div>
+          <div><span class="badge amber">Elevated</span></div>
+        </div>
+
       </div>
     </div>
   </div>
